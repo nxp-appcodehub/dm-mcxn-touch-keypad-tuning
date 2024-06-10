@@ -1,0 +1,25 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" id="dm-mcxn-touch-keypad-tuning" type="demo" format="projectfile" versionSchema="1.0.0" name="MCXN Touch Keypad Tuning">
+    <display_title>
+        Touch Keypad Tuning on MCXN
+    </display_title>
+    <overview>
+        <![CDATA[The demo shows how to use NXP Touch sensing library with the python tool for Capacitive Touch keypad sensitivity tuning]]>
+    </overview>
+    <toolchains>
+        <toolchain name="iar"></toolchain>
+    </toolchains>
+    <families>
+        <family name="kinetis"></family>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <custom_hw></custom_hw>
+    </nxp_compatible_hw>
+    <peripherals>
+        <peripheral name="tsi"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="hmi"></category>
+        <category name="touch_sensing"></category>
+    </categories>
+</data:item>

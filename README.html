@@ -1,0 +1,420 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\nxa17503\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="nxp-application-code-hub">NXP Application Code Hub </h1>
+<p><a href="https://www.nxp.com"><img src="https://mcuxpresso.nxp.com/static/icon/nxp-logo-color.svg" width="100"></a></p>
+<h2 id="touch-keypad-tuning-on-mcxn">Touch Keypad Tuning on MCXN </h2>
+<ul>
+<li>The demo shows how to use NXP Touch sensing library with the Python tool for Capacitive Touch keypad sensitivity tuning</li>
+<li>NXP partners can obtain the TSI EVB board through their NXP representative</li>
+<li>For the precise keypad sensitivity tuning, the usage of the "artificial finger" probe is recommended.</li>
+</ul>
+<h4 id="boards-custom-board">Boards: Custom Board </h4>
+<h4 id="categories-hmi-touch-sensing">Categories: HMI, Touch Sensing </h4>
+<h4 id="peripherals-tsi">Peripherals: TSI </h4>
+<h4 id="toolchains-iar-mcuxpresso-ide">Toolchains: IAR, MCUXpresso IDE </h4>
+<h2 id="table-of-contents">Table of Contents </h2>
+<ol>
+<li><a href="#step1">Software</a></li>
+<li><a href="#step2">Hardware</a></li>
+<li><a href="#step3">Setup</a></li>
+<li><a href="#step4">Touch Tuning</a></li>
+<li><a href="#step5">Generated settings</a></li>
+<li><a href="#step6">Keydetector MBW</a></li>
+<li><a href="#step7">Enabling the FreeMASTER support</a></li>
+<li><a href="#step8">Support</a></li>
+<li><a href="#step9">Release Notes</a></li>
+</ol>
+<h2 id="1-softwarea-namestep1a">1. Software<a name="step1" href=""></a> </h2>
+<ul>
+<li>This software demonstrates the usage of NXP Touch library running on the MCXN device supporting the TSI peripheral. The example also shows the Touch sensing keypad tuning using the Python script based tool for sensitivity calibration.</li>
+<li>At least NXP Touch library SW ver. 2.11 with a modified key-detector "MBW" is required supporting the calibration values calculated by the Python tuning tool.</li>
+<li>Check file "nt.h" NXP TOUCH version.</li>
+</ul>
+<h2 id="2-hardwarea-namestep2a">2. Hardware<a name="step2" href=""></a> </h2>
+<ul>
+<li>For this demo you will need the following hardware.</li>
+</ul>
+<p align="center">  <img src="images/tsi_evk.png"></p>
+<p style="text-align: center;">
+X-MCX-N9XX-TSI Board.
+</p>
+<p align="center">  <img src="images/tsi_evk_bd.png"></p>
+<p style="text-align: center;">
+MCX-TSI board block diagram.
+</p>
+<h2 id="3-setupa-namestep3a">3. Setup<a name="step3" href=""></a> </h2>
+<h3 id="31-step-1">3.1 Step 1 </h3>
+<ul>
+<li>After cloning the repository and importing it to the workspace connect the board to the pc using a micro-USB cable in the J8 connector. Connect the J-Link debugger cable to onboard SWD header J1.</li>
+</ul>
+<h3 id="32-step-2">3.2 Step 2 </h3>
+<ul>
+<li>Try to download the demo application to the board and test the functionality. Python-based tuning tool will be used for sensitivity tuning</li>
+</ul>
+<h3 id="33-step-3">3.3 Step 3 </h3>
+<ul>
+<li>
+<p>Python-based touch tuning tool provides a procedure for tuning a number of parameters of the NXP TSI library and generates the "nt_setup.c" file, containing the HW sensitivity tuning adjusted for every key separately and specific calibration values required by the key-detector MBW.</p>
+</li>
+<li>
+<p>The tuning tool assumes that the NSTEP values are logged to the serial bus (UART) or the J-Link connection at the same rate that they are available to the TSI library.  The NSTEP value corresponds to the raw TSI counter value and its change on the button "touch event" tells about the channel sensitivity, while the NSTEP jitter in the "released state" tells about the system noise level.</p>
+</li>
+<li>
+<p>From the embedded SW perspective, the communication is managed in source file "tsi_trace.c". Measured signals are passed to UART buffer in form of short packets, while the data for J-Link access are stored as structure in the RAM table starting at "tsi_specific_rw" location which corresponds to 0x20000000 in the ARM memory map. See the "tsi_trace.c", structure TsiTraceData and device linker file (i.e. *.icf file for IAR EWARM project) for details, please. The Python communication for j-Link expects that the data table is located at this address.</p>
+</li>
+</ul>
+<h2 id="4-touch-tuninga-namestep4a">4. Touch Tuning<a name="step4" href=""></a> </h2>
+<ul>
+<li>Single Python script, \url{<a href="http://tuningGuide.py">tuningGuide.py</a>}, guides the user through the tuning procedure.  It can be called in the following way:</li>
+</ul>
+<blockquote>
+<p>Python <a href="http://tuningGuide.py">tuningGuide.py</a> -h<br>
+usage: <a href="http://tuningGuide.py">tuningGuide.py</a> [-h] [-p PROTOCOL] [-s SNRTARGET] [-f FILENAME]<br>
+options:<br>
+-h, --help            show this help message and exit<br>
+-p PROTOCOL, --protocol PROTOCOL<br>
+protocol (jlink or uart)<br>
+-s SNRTARGET, --snrTarget SNRTARGET<br>
+target SNR<br>
+-f FILENAME, --filename FILENAME<br>
+JSON filename, containing the basic HW assignment and parameters</p>
+</blockquote>
+<ul>
+<li>The connection supported is J-Link debugger (SWD) or UART. J-Link interface may fit for the most cases.</li>
+<li>The filename is the name of the JSON config file, that contains the basic TSI input names and channel assignment, according to the SDK example and definitions in SDK "board.h" file.<br>
+These definitions are used by tool for generating the "nt_setup.c" file.</li>
+<li>The SNR (Signal-To-Noise) target is used in phase 3 of tuning.</li>
+<li>See the example *.bat files for the proper command line format to run the script.</li>
+</ul>
+<h3 id="41-json-configuration-file-pin-config-file">4.1 JSON Configuration file (pin config file) </h3>
+<p>Besides the TSI channel assignment, the file contains more parameters regarding the active shield usage, self or mutual mode used for the given input and important HW config values related to the desired sensitivity and SW thresholds. At the bottom it contains the path to the SW project file "nt_setup.c" which will be re-generated and updated during the tuning for several times.</p>
+<ul>
+<li>See the "pinConfigXXX.json" file content for details. Some of the parameters will be furtherly explained in the following chapters.</li>
+</ul>
+<h3 id="42-initial-tsi-hw-configuration">4.2 Initial TSI HW Configuration </h3>
+<ul>
+<li>The Python script prompt the user for the desired clock frequency, and set the main clock, and PRBS parameters to approximate this clock as good as possible.  After every described phase the tool generates a file, "nt_setup_tuningX.c", which should be used for generating the image and flashing it.  The tool also generates the output JSON file "tuning_output.json", containing most of the measured and calculated values (good for analysis).</li>
+<li>The TSI operation clock frequency needs to be set as high as possible: the highest clock frequency and smallest clock divider are the better choice. Such a setting yields high NSTEP values, which leads to best numerical accuracy.  Furthermore, the SSC mode should be disabled (leading to a faster clock). The delta voltage "DVOLT" should be as big as possible (2.0V), which also maximises NSTEP.</li>
+<li>However the highest TSI clock frequency will be limited by the physical factors of PCB, mainly the parasitic capacitance of the signal traces.</li>
+<li>When the Active Shield is used, the SSC (Spread Spectrum modulated Clock) should be enabled to reduce the EMI. Practical clock limit is about 2MHz, for the Active Shield enabled on board.</li>
+<li>Sensitivity Boost is recommended as disabled. ("enableSensitivity = false")</li>
+<li>The legacy smoothing method in key-detector should be disabled "signal_filter.coeff1=0"</li>
+<li>At the beginning the TSI HW "decimation" is set to minimal value</li>
+<li>The generated content of "nt_setup.c" can be carefully edited manually in the Python script.</li>
+<li>The current amplifier should be set to minimal input current gain, configured to</li>
+</ul>
+<p>S_XIN=<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{8}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>, S_XCH <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mfrac><mn>1</mn><mn>16</mn></mfrac></mrow><annotation encoding="application/x-tex">=\frac{1}{16}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">16</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<h3>4.3 Running the tuning script</h3>
+<p>At the start of the tuning tool the "console menu" appears, allowing the user to select the desired tuning phase. The tunning process includes 4 consequent phases, where the "nt_setup" configuration file is updated with the new parameters after every phase. The JSON configuration file must point to the proper SW project directory, in order to have the "nt_setup.c" file updated. The tool guides the user to re-compile and re-flash the SW project with the updated settings after every phase. It is recommended to run all the tuning phases at once and follow the required steps, without closing the console window.</p>
+<ul>
+<li>The console menu appears and the user press the desired key to continue. The console window must be focused.</li>
+</ul>
+<p align="center">  <img src="images/console_menu.png"></p>
+<p style="text-align: center;">
+Console menu
+</p>
+<h3 id="tuning-phase-0">Tuning Phase 0 </h3>
+<p>At the beginning the user should select the Phase 0 from the menu, which just generate the basic "root" setup file. The tool asks the user to select the TSI switching frequency, with the known physical limitation for PRBS clock modulation and Active Shield usage. With the higher switching frequency, the higher NSTEP resolution may be achieved, but depending on the PCB design, the TSI channel and Active Shield signal should be checked for proper waveform shape. The tool automatically calculates the closest frequency and select the proper clock settings to be generated into root setup file. Decimation parameter is all set to 1, meaning there is no Decimation used for the beginning. As soon as the project is recompiled with the root "nt_setup.c" file included, and SW is re-flashed, the user needs to press enter and continue with the following Phase 1.</p>
+<h3 id="tuning-phase-1">Tuning Phase 1 </h3>
+<p>At the start of this phase, the number of sensors are determined and the sampling rate is measured (inverse of the scan time).  Next, the baseline PETSN values are measured.  The panel should not be touched during this step.  A 1-second recording of all electrodes is made, and the average NSTEP values are computed. In this phase the user must not touch any button!<br>
+The minimal NSTEP value is taken to determine the numerical headroom for the PETSN values, which is then used to determine TSICNT_SHIFT. The PETSN value is proportional to the inverted NSTEP value The PETSN values are computed as:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>E</mi><mi>T</mi><mi>S</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">{PETSN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">PETSN</span></span></span></span></span> = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mn>20</mn><mo>+</mo><mtext>TSICNT_SHIFT</mtext><mo stretchy="false">)</mo></mrow></msup><mtext>NSTEP</mtext></mfrac></mrow><annotation encoding="application/x-tex">\frac{2^{(20+\text{TSICNT\_SHIFT})}}{\text{NSTEP}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4157em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0707em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">NSTEP</span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9667em;"><span style="top:-2.9667em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5357em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">20</span><span class="mbin mtight">+</span><span class="mord text mtight"><span class="mord mtight">TSICNT_SHIFT</span></span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>NOTE: For the Mutual-cap. mode inputs, PETSN value is not used and the non-inverted NSTEP value is used instead.</p>
+<p>As soon as the baseline is measured, the user must touch all of the buttons once to determine the maximal delta NSTEP activation for the individual buttons, the result is averaged and the average maximal activation is captured and used for estimating the appropriate Decimation factor needed for the individual buttons according to the "min_nstep" desired value given by JSON cfg. file. It means that for the less-sensitive buttons, higher Decimation is suggested to accumulate higher delta NSTEP value and better SNR on such buttons. As soon as the all of the button activations are captured, the chart can be closed and the "nt_setup.c" file is updated with the suggested Decimation values for the individual inputs. The tool instruct the user to recompile and re-flash the application. A soon as this is done, the user can continue with Phase 2</p>
+<p align="center">  <img src="images/ph1_nstep.png"></p>
+<p style="text-align: center;">
+orange: avg. peak activation, blue: instant signal / noise
+</p>
+<p>It means that for the less-sensitive buttons, higher Decimation is suggested to accumulate higher delta NSTEP value and better SNR on such buttons. As soon as the all of the button activations are captured, the chart can be closed and the "nt_setup.c" file is updated with the suggested Decimation values for the individual inputs. The tool instruct the user to recompile and re-flash the application. A soon as this is done, the user can continue with Phase 2</p>
+<h3 id="tuning-phase-2">Tuning Phase 2 </h3>
+<p>In this phase, the activation threshold and the integer "delta_multiplier" and "delta_divider" values are determined for each button.  For this, the expected delta PETSN values need to be determined.<br>
+At first, an rough activation threshold is determined for each button, and a threshold is set to 4 times the estimated jitter on the baseline signal, measured in Phase 1 (hardcoded in the Python script).<br>
+In this stage, each button needs to be touched. The tool will automatically detect which electrode has been touched, and determines the average activation.  In blue, the instantaneous activation is shown, and in orange the average peak level.<br>
+It may take longer time to get the proper average value, so that the user should carefully monitor the average activation, because the average may be confused by an improper measurement.</p>
+<p>For more precise tuning the user can select just one input which will be tuned and us the "pause" button from the GUI menu between the individual input calibration. This phase is a bit critical for the precise measurement and proper finger positioning. In case of mistake, the wrongly measured button can be selected again and re-calibrated.<br>
+As soon as all of the activations is collected, the chart can be closed manually.  At this stage, the information is used for the generation of the "actMat" array for crosstalk reduction.<br>
+Using the average activation values, the "delta_multiplier" and "delta_divider" values are computed to reach a target value of 2500.  Using these values, the delta PETSN values are expected to be equalized in amplitude during operation.  Next, a threshold value is determined for each button, namely as 80% of the expected (average) equalized <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mtext>PETSN</mtext></mrow><annotation encoding="application/x-tex">\Delta\text{PETSN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord text"><span class="mord">PETSN</span></span></span></span></span> value.<br>
+At this stage the tool automatically switches to Phase 3, where the rest of the parameters are calculated. The obtained parameters will be added to the output JSON file.</p>
+<p align="center">  <img src="images/ph2_petsn_levels.png"></p>
+<p style="text-align: center;">
+  red:  instant (peak) activation,
+  orange: avg. peak activation,                                            
+  blue: instant noise on button, 
+</p>
+<h3 id="tuning-phase-3">Tuning Phase 3 </h3>
+<p>The normalized PETSN signals can be temporally smoothed by a first-order filter with time constant <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span></span></span></span>.  The time constant should be set according to a desired signal-to-noise ratio is obtained.  Higher time constants will increase the SNR, but will slow down the transition from baseline to active level, due to which the detection latency will increase.  The SNR is defined as the ratio between the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mtext>PETSN</mtext></mrow><annotation encoding="application/x-tex">\Delta\text{PETSN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord text"><span class="mord">PETSN</span></span></span></span></span> level during touch jitter (peak-to-peak) of the PETSN signal without touch.</p>
+<p>In Phase 3 of the Python tool, the time constants will be optimized, for each button separately, in order to reach a target SNR (default value of 10).  It will also measure the "min_noise_limit".  Figure shows the "min_noise_limit" and the SNR as a function of the smoothing time constant.  In this case, smoothing is not required to reach the desired SNR.  In the parameter file, the "signal_to_noise_ratio" is set to 80% of the target SNR. Note that this parameter defines the detection threshold together with the "min_noise_limit".</p>
+<h3 id="parameter-file-generation">Parameter File Generation </h3>
+<p>After closing the figures the "nt_setup.c" file is finally updated and the application can be re-compiled. Generated file, "nt_setup_tuning2.c" contains the resulting SW settings. File "tuning_output.json" contains all of the important values measured in the individual tuning phases and calculated values used for calibration . The values can be furtherly processed or used for statistics.</p>
+<p align="center">  <img src="images/signal_smooth.png"></p>
+<p style="text-align: center;">
+  Output of the Python tool
+</p>
+<h3 id="tuning-results">Tuning Results </h3>
+<ul>
+<li>To verify the tuning results, the keypad signals can be traced using the "traceTsi" Python script<br>
+Run "trace.bat" for signal tracing. See the batch file content for possible parameters.</li>
+</ul>
+<blockquote>
+<p>Python <a href="http://traceTsi.py">traceTsi.py</a> -p jlink -t 0 -l 15 -f signals.txt</p>
+</blockquote>
+<p align="center">  <img src="images/trace.png"></p>
+<p style="text-align: center;">
+  Tracing the keypad signals
+</p>
+<h2 id="5-generated-settings-a-namestep5a">5. Generated settings <a name="step5" href=""></a> </h2>
+<ul>
+<li>The Python tuning tool generates the output "nt_setup.c" file, based on the Python hardcoded template settings and the user-defined JSON pin config file.</li>
+<li>Default and individual key-detector MBW parameters are generated for all electrodes.</li>
+<li>Default and individual "nt_electrode" setting is generated for all electrodes.</li>
+<li>HW config is derived from the default config with the individual parameters (decimation, shield config) fine-tuned by the Python tool. Decimation factor is adjusted by the Python tool depending on the sensitivity of the channel and desired "min_nstep" value in the JSON pin config file.</li>
+<li>See "nt_setup.c" for details, please.</li>
+</ul>
+<h3 id="hardware-configuration">Hardware Configuration </h3>
+<blockquote>
+<p>const tsi_config_t tsi_hw_config_El_1 = {<br>
+DEFAULTHWCONFIG,<br>
+.configSelfCap.commonConfig.decimation = kTSI_SincDecimationValue_8, <br>
+.configSelfCap.enableShield = kTSI_shieldAllOff <br>
+};</p>
+</blockquote>
+<h3 id="keydetector-mbw-configuration">Keydetector MBW Configuration </h3>
+<blockquote>
+<p>#define DEFAULTMBW <br>
+.signal_filter.coef1 = 0, <br>
+.base_avrg.n2_order = 12, <br>
+.non_activity_avrg.n2_order = 15, <br>
+.entry_event_cnt = 0, <br>
+.deadband_cnt = 0, <br>
+.baseline_track_window = 4000, <br>
+.baseline_track_window_touch = 16000, <br>
+.touch_limit = 3, <br>
+.tau_smooth_baseline = 5000, <br>
+.debounce_length = 0, <br>
+.baseline_debounce_length = 20</p>
+</blockquote>
+<ul>
+<li><b><i>baseline_track_window</i></b> - Baseline tracking window length in [ms] (for example the value   2000 represent 2s window for 50Hz or 20ms time period). Cannot be zero.</li>
+<li><b><i>baseline_track_window_touch</i></b> - Baseline tracking window length for Touch event (longer, i.e. slow adaptation window) in [ms] (for example the value 2000 represent 2s window for 50Hz or 20ms time period). Zero freezes the baseline adaptation during touch.</li>
+<li><b><i>touch_limit</i></b> - The maximum number of touches before making the baseline adaptation quicker (too many touches are probably accidental) if no or low touch event normal baseline adaptation is used.</li>
+<li><b><i>tau_smooth_baseline</i></b> - Smoothing time constant (in [ms]) for baseline tracking.</li>
+<li><b><i>debounce_length</i></b>   - Size of the signal debouncing window [num_of_samples], runtime glitch filter for improved EMC immunity (0 = no_debounce, 3-5 = recommended for EMC).</li>
+<li><b><i>baseline_debounce_length</i></b> - Length [num_of_samples] of the initial median filtering (glitch filter) used just for baseline settling time after the reset (0 = no_debounce).</li>
+</ul>
+<blockquote>
+<p>const struct nt_keydetector_mbw nt_keydetector_mbw_El_1 = {<br>
+DEFAULTMBW,<br>
+.tau_smooth_signal = 11,<br>
+.min_noise_limit = 108,<br>
+.signal_to_noise_ratio = 8<br>
+};</p>
+</blockquote>
+<ul>
+<li><b><i>tau_smooth_signal</i></b> - Smoothing time constant (in [ms]) for the initial fixed smoothing of signals, may replace the legacy iir signal filtering from legacy uSAFA keydec., resulting to a faster response.</li>
+<li><b><i>min_noise_limit</i></b> - Minimum noise value used for noise floor adaptation</li>
+<li><b><i>signal_to_noise_ratio</i></b> - It is used to calculate the Touch threshold as: (signal_to_noise_ratio) * (min_noise_limit). These 2 values can be manually adjusted by the user if needed. In order to improve the response on the button.</li>
+</ul>
+<h3 id="electrode-configuration">Electrode Configuration </h3>
+<blockquote>
+<p>const struct nt_electrode El_1 = {<br>
+.multiplier = 73,<br>
+.divider = 3,<br>
+.offset = 1791,<br>
+.delta_multiplier = 64,<br>
+.delta_divider = 64,<br>
+.keydetector_params.mbw = &amp;nt_keydetector_mbw_El_1,<br>
+.keydetector_interface= &amp;nt_keydetector_mbw_interface,<br>
+.pin_input = BOARD_TSI_SELF_ELECTRODE_1,<br>
+.tsicnt_shift = 3,<br>
+.tsi_hw_config = ( void* )&amp;tsi_hw_config_El_1<br>
+};</p>
+</blockquote>
+<ul>
+<li><b><i>multiplier</i></b> - Multiplier applied on complete measured signal</li>
+<li><b><i>divider</i></b> - Divider applied on complete measured signal</li>
+<li><b><i>offset</i></b> - Offset to be substracted from the measured signal for channel Equalization</li>
+<li><b><i>delta_multiplier</i></b> - Multiplier for delta signal for Equalization</li>
+<li><b><i>delta_divider</i></b> - Divider for Delta signal for Equalization</li>
+<li><b><i>tsicnt_shift</i></b> - Scaling factor for PETSN calculation (inversion) from raw. TSICNT (NSTEP) value</li>
+</ul>
+<h2 id="6-pin-config-json-file-a-namestep6a">6. Pin Config JSON file <a name="step6" href=""></a> </h2>
+<p>Following is the example content of the pin config JSON file, which must be defined by the user prior to running the Python tuning script. Included JSON file can be used for reference.<br>
+Some of the HW features like adjacent channel shielding may not be supported on some devices.</p>
+<blockquote>
+<p>{<br>
+"input_label": [<br>
+"El_1",<br>
+"El_2"<br>
+],<br>
+"pin_input": [<br>
+"EVB_BOARD_TOUCHPAD_1_ELECTRODE",<br>
+"EVB_BOARD_TOUCHPAD_2_ELECTRODE"<br>
+],<br>
+"gpio_input": [<br>
+"{GPIO_PTD16, NULL}",<br>
+"{GPIO_PTE3, NULL}"<br>
+],<br>
+"shield_cfg": [<br>
+"kTSI_shieldAllOff",<br>
+"kTSI_shieldAllOff"<br>
+],<br>
+"mutual_input": [<br>
+"false",<br>
+"false"<br>
+],<br>
+"time_period_percentual_headroom": 15,<br>
+"min_nstep": 50,<br>
+"dvolt_option": 3,<br>
+"max_decimation": 20,<br>
+"min_decimation": 2,<br>
+"delta_threshold": 0.8,<br>
+"debounce_length": 0,<br>
+"delta_target": 2500,<br>
+"adjacent_electrodes": "kAdj_grounding",<br>
+"output_name":  "c:/GIT/touch_sensing/sw/examples/evbke17z512/nt_setup.c"<br>
+}</p>
+</blockquote>
+<ul>
+<li>
+<p><b><i>input_label</i></b> - Logical name of channel electrode used in SW</p>
+</li>
+<li>
+<p><b><i>pin_input</i></b> - Electrode TSI channel num. assigned, using the SDK definition from "board.c"</p>
+</li>
+<li>
+<p><b><i>gpio_input</i></b> - Corresponding GPIO pin shared with the TSI channel, for the adjacent channel grounding method, when enabled</p>
+</li>
+<li>
+<p><b><i>shield_cfg</i></b> -  Which shield outputs to be selected for the scanned channel. See the device RM and SDK for supported shield features. NOTE: For KE17z512 device, the shield can be connected to all TSI inputs (See appropriate pin config for reference)</p>
+</li>
+<li>
+<p><b><i>mutual_input</i></b> - Denotes which input is "mutual mode" (true) or self-cap (false)</p>
+</li>
+<li>
+<p><b><i>time_period_percentual_headroom</i></b> - Overall keypad scan-time percentual headroom to allow some safety margin due variation caused by physics.</p>
+</li>
+<li>
+<p><b><i>min_nstep</i></b> - Minimal NSTEP value measured on every channel as a sensitivity threshold level used py Python tool for sensitivity adjustments by increased decimation</p>
+</li>
+<li>
+<p><b><i>dvolt_option</i></b> - Dvolt option register value should be set to maximum according to the version of the HW, usage: 3 - for Kinetis, 5 - for MCXN, check the device reference manual.</p>
+</li>
+<li>
+<p><b><i>max_decimation</i></b> - Upper limit for the Decimation adjustments as the higher values increases the scantime.</p>
+</li>
+<li>
+<p><b><i>min_decimation</i></b> - Lower limit for Decimation used to achieve the "min_nstep" value, default is Decimation = 1, from which the tool calculates the proper value, when the default sensitivity is poor, the min_decimation can be adjusted by the user, before the tuning is run.</p>
+</li>
+<li>
+<p><b><i>delta_threshold</i></b> - Usually set to some 0.7 to 0.8 (i.e. 70-80%) of the maximal channel activation, used for button touch threshold calculation, allowing some tollerances.</p>
+</li>
+<li>
+<p><b><i>debounce_length</i></b> - Number of samples, used by key-detector MBW for debouncing   of the glitches.</p>
+</li>
+<li>
+<p><b><i>delta_target</i></b> - Delta target activation used by Python to equalize all channel activations and to calculate the "multipliers" and "dividers" for the SW equalization.</p>
+</li>
+<li>
+<p><b><i>adjacent_electrodes</i></b> - What to do with the unscanned channels to improve the performance of the touch application. Available options: "kAdj_disable", "kAdj_grounding" and "kAdj_shielding". Some of the functionality may not be supported on some devices.</p>
+</li>
+<li>
+<p><b><i>output_name</i></b> Path to the project "nt_setup.c" file which is generated and updated by the Python tool during the 3 stages.</p>
+</li>
+</ul>
+<h2 id="7-enabling-the-freemaster-supporta-namestep7a">7. Enabling the FreeMASTER support<a name="step7" href=""></a> </h2>
+<ul>
+<li>
+<p>FreeMASTER GUI tool for touch can be optionally enabled to allow monitoring all the available touch-sensing related signals and access all variables responsible for application "fine-tuning" and to verify the proper functionality.</p>
+</li>
+<li>
+<p>FreeMASTER source files have been excluded from the project build.</p>
+</li>
+<li>
+<p>In order to have the Freemaster running:<br>
+-FreeMASTER PC GUI application must be installed from: <a href="https://nxp.com/freemaster">https://nxp.com/freemaster</a> under the licensing conditions.<br>
+-FreeMASTER project file "*.pmpx" for "touch" example can be downloaded as part of the appropriate SDK package (for the desired device) inside optional middleware "touch". SDK includes also the FreeMASTER driver source codes.<br>
+-FreeMASTER driver source codes can be downloaded separately and placed into the<br>
+"middleware\freemaster\src" project folder of this example.<br>
+NT_FREEMASTER_SUPPORT can be then enabled (1) in "nt_types.h"</p>
+</li>
+<li>
+<p>Working with FreeMASTER is not described in this example.</p>
+</li>
+<li>
+<p>NOTE: Project compiled with IAR EWARM 6.40.2</p>
+</li>
+</ul>
+<p align="center">  <img src="images/add_frmstr_src.png"></p>
+<p style="text-align: center;">
+  Placing the FreeMASTER source files
+</p>
+<p align="center">  <img src="images/frmstr_src_excluded1.png"></p>
+<p style="text-align: center;">
+  Including FreeMASTER sources into project build
+</p>
+<h2 id="8-supporta-namestep8a">8. Support<a name="step8" href=""></a> </h2>
+<h4 id="project-metadata">Project Metadata </h4>
+<p><a href="https://github.com/search?q=org%3Anxp-appcodehub+hmi+in%3Areadme&amp;type=Repositories"><img src="https://img.shields.io/badge/Category-HMI-yellowgreen" alt="Category badge"></a> <a href="https://github.com/search?q=org%3Anxp-appcodehub+touch_sensing+in%3Areadme&amp;type=Repositories"><img src="https://img.shields.io/badge/Category-TOUCH%20SENSING-yellowgreen" alt="Category badge"></a></p>
+<p><a href="https://github.com/search?q=org%3Anxp-appcodehub+tsi+in%3Areadme&amp;type=Repositories"><img src="https://img.shields.io/badge/Peripheral-TSI-yellow" alt="Peripheral badge"></a></p>
+<p><a href="https://github.com/search?q=org%3Anxp-appcodehub+iar+in%3Areadme&amp;type=Repositories"><img src="https://img.shields.io/badge/Toolchain-IAR-orange" alt="Toolchain badge"></a> <a href="https://github.com/search?q=org%3Anxp-appcodehub+mcux+in%3Areadme&amp;type=Repositories"><img src="https://img.shields.io/badge/Toolchain-MCUXPRESSO%20IDE-orange" alt="Toolchain badge"></a></p>
+<p>Questions regarding the content/correctness of this example can be entered as Issues within this GitHub repository.</p>
+<blockquote>
+<p><strong>Warning</strong>: For more general technical questions regarding NXP Microcontrollers and the difference in expected funcionality, enter your questions on the <a href="https://community.nxp.com/">NXP Community Forum</a></p>
+</blockquote>
+<p><a href="https://www.youtube.com/@NXP_Semiconductors"><img src="https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg" alt="Follow us on Youtube"></a><br>
+<a href="https://www.linkedin.com/company/nxp-semiconductors"><img src="https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg" alt="Follow us on LinkedIn"></a><br>
+<a href="https://www.facebook.com/nxpsemi/"><img src="https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg" alt="Follow us on Facebook"></a><br>
+<a href="https://twitter.com/NXP"><img src="https://img.shields.io/badge/Twitter-Follow%20us%20on%20Twitter-white.svg" alt="Follow us on Twitter"></a></p>
+<h2 id="9-release-notesa-namestep9a">9. Release Notes<a name="step9" href=""></a> </h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Version</th>
+<th>Description / Update</th>
+<th style="text-align:right">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1.0</td>
+<td>Initial release on Application Code Hub</td>
+<td style="text-align:right">June 6<sup>th</sup> 2024</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
