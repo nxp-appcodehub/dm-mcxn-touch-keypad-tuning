@@ -56,7 +56,7 @@ extern uint32_t flash_end;
 #elif defined(__GNUC__) /* For GCC compiler */
 #define CUSTOM_DELAY() \
     {                  \
-        asm("nop");    \
+        __asm__("nop");\
     }
 #elif defined(__MCUXPRESSO)
 #define CUSTOM_DELAY() \
